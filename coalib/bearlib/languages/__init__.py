@@ -50,5 +50,7 @@ from .definitions.Verilog import Verilog
 from .definitions.VisualBasic import VisualBasic
 from .definitions.XML import XML
 from .definitions.ZShell import ZShell
+#Added Mine Language
+from .definitions.Ocaml import Ocaml
 
 # Stop ignoring PyUnusedCodeBear
