@@ -4,6 +4,7 @@ from coalib.bearlib.languages.Language import Language
 @Language
 class Ocaml:
     extensions = '.ml',
+    comment_delimiters = {}
     multiline_comment_delimiters = {'(*': '*)'}
     string_delimiters = {'"': '"'}
     multiline_string_delimiters = {}
