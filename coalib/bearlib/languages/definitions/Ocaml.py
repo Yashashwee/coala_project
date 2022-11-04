@@ -7,15 +7,19 @@ class Ocaml:
     multiline_comment_delimiters = {'(*': '*)'}
     string_delimiters = {'"': '"'}
     multiline_string_delimiters = {}
-    indent_types = {'{': '}'}
+    indent_types = {'(': ')'}
     encapsulators = {'(': ')', '[': ']'}
     keywords = [
-        'auto', 'break', 'case', 'char', 'const', 'continue', 'default',
-        'do', 'double', 'else', 'enum', 'extern', 'float', 'for', 'goto',
-        'if', 'int', 'long', 'register', 'return', 'short', 'signed',
-        'sizeof', 'static', 'struct', 'switch', 'typedef', 'union',
-        'unsigned', 'void', 'volatile', 'while', '#include', '#define',
-        '#undef', '#ifdef', '#ifndef', '#if', '#endif', '#else', '#elif',
-        '#line', '#pragma']
+        'and', 'as', 'assert', 'asr', 'begin',
+        'constraint', 'do', 'done', 'downto', 'else',
+        'exception', 'external', 'false', 'for', 'fun',
+        'functor', 'if', 'in', 'include', 'inherit',
+        'land', 'lazy', 'let', 'lor', 'lsl',
+        'lxor', 'match', 'method', 'mod', 'module',
+        'new', 'nonrec', 'object', 'of', 'open',
+        'private', 'rec', 'sig', 'struct', 'then',
+        'true', 'try', 'type', 'val', 'virtual',
+        'while', 'with'
+    ]
     special_chars = list(r'+-*/.;\,()[]{}\=<>|&^~?%!')
     string_delimiter_escape = {'"': '\\"'}
