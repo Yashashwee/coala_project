@@ -417,8 +417,8 @@ required = read_requirements('requirements.txt')
 test_required = read_requirements('test-requirements.txt')
 
 filename = os.path.join(__dir__, 'README.rst')
-with open(filename) as readme:
-    long_description = readme.read()
+#with open(filename) as readme:
+    #long_description = readme.read()
 
 extras_require = None
 EXTRAS_REQUIRE = {}
@@ -441,17 +441,17 @@ if __name__ == '__main__':
     if pip_version < LooseVersion('9.0.3'):
         raise RuntimeError('Version of pip is less than 9.0.3. '
                            'Consider upgrading pip to pip~=9.0.3')
-    setup(name='coala',
+    setup(name='vyd-coala',
           version=VERSION,
           description=DESCRIPTION,
           author='The coala developers',
-          author_email='coala.analyzer@gmail.com',
-          maintainer='Lasse Schuirmann, Fabian Neuschmidt, Mischa Kr\xfcger'
+          author_email='avatsal38@gmail.com',
+          maintainer='vyd'
                      if not on_rtd else 'L.S., F.N., M.K.',
           maintainer_email=('lasse.schuirmann@gmail.com, '
                             'fabian@neuschmidt.de, '
                             'makman@alice.de'),
-          url='http://coala.io/',
+          url='https://github.com/Yashashwee/coala_project',
           platforms='any',
           packages=find_packages(exclude=('build.*', 'tests', 'tests.*')),
           install_requires=required,
@@ -464,7 +464,7 @@ if __name__ == '__main__':
           license='AGPL-3.0',
           keywords=KEYWORDS,
           data_files=data_files,
-          long_description=long_description,
+          #long_description=long_description,
           entry_points={
               'console_scripts': [
                   'coala = coalib.coala:main',
